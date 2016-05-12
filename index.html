@@ -16,6 +16,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
 	<!-- Styles -->
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
 
@@ -28,7 +31,8 @@
 		<header>
 			<h1 class="header-logo">
 				<a href="index.html">
-					<img src="" ald="DisGo">
+					DisGo
+					<img src="img/logo-full.svg" alt="DisGo">
 				</a>
 			</h1>
 			<nav class="navbar">
@@ -88,12 +92,43 @@
 			</div>
 
 			<!-- Main Slider -->
-			<div class="slider" id="HighlightEvents">
-
+			<div class="carousel slider divider" id="HighlightEvents" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#HighlightEvents" data-slide-to="0" class="active"></li>
+					<li data-target="#HighlightEvents" data-slide-to="1"></li>
+					<li data-target="#HighlightEvents" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img class="first-slide" src="img/banner-event.jpg" alt="First slide">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1>Example headline.</h1>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<img class="second-slide" src="img/banner-event.jpg" alt="Second slide">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1>Another example headline.</h1>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<img class="third-slide" src="img/banner-event.jpg" alt="Third slide">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1>One more for good measure.</h1>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<!-- Events -->
-			<section class="main-events">
+			<section class="main-events divider">
 				<div class="container">
 					<div class="ad-middle">
 						
@@ -196,7 +231,7 @@
 			</section>
 
 			<!-- Discos -->
-			<section class="main-discos">
+			<section class="main-discos divider">
 				<div class="container">
 					<h2>Todas las Discotecas de Lima</h2>
 					<div class="col-sm-4 col-xs-12 discos-thumb">
@@ -269,7 +304,7 @@
 			</section>
 
 			<!-- Contacts -->
-			<section class="contacts">
+			<section class="contacts divider">
 				<div class="container">
 					<div class="col-xs-3 contacts-details">
 						<h2>Contáctanos</h2>
@@ -318,7 +353,10 @@
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+	<script src="js/easing.min.js"></script>
 	<script src="js/scripts.js"></script>
 
 </body>
