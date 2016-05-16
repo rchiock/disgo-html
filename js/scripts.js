@@ -14,9 +14,9 @@ $(document).ready(function(){
 	$(window).scroll(function(){
 		var sectionUp = $(window).scrollTop();
 		if (sectionUp>=140) {
-			$(".TopBar").css("display","block");
+			$(".main-content .TopBar").css("display","block");
 		} else {
-			$(".TopBar").css("display","none");
+			$(".main-content .TopBar").css("display","none");
 		}
 	})
 

@@ -16,6 +16,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
 	<!-- Styles -->
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
 
@@ -27,39 +30,50 @@
 		<!-- Header -->
 		<header>
 			<h1 class="header-logo">
-				<a href="#">
-					<img src="" ald="DisGo">
+				<a href="index.html">
+					DisGo
+					<img src="img/logo-full.svg" alt="DisGo">
 				</a>
 			</h1>
 			<nav class="navbar">
 				<ul>
-					<li><a href="#"><img src="" alt="Discos"></a></li>
-					<li><a href="#"><img src="" alt="Eventos"></a></li>
-					<li><a href="#"><img src="" alt="Aplicación Móvil"></a></li>
-					<li><a href="#"><img src="" alt="Administradores"></a></li>
-					<li><a href="#"><img src="" alt="Contactos"></a></li>
+					<li><a href="list-discos.html"><img src="img/icon-disco.svg" alt="Discos"></a></li>
+					<li><a href="list-events.html"><img src="img/icon-events.svg" alt="Eventos"></a></li>
+					<li><a href="about-app.html"><img src="img/icon-app.svg" alt="Aplicación Móvil"></a></li>
+					<li><a href="about-admin.html"><img src="img/icon-admin.svg" alt="Administradores"></a></li>
+					<li><a href="contacts.html"><img src="img/icon-contacts.svg" alt="Contactos"></a></li>
 				</ul>
 			</nav>
-
 			<div class="social">
 				<ul>
-					<li><a href=""><img src="" alt="Facebook"></a></li>
-					<li><a href=""><img src="" alt="Instagram"></a></li>
-					<li><a href=""><img src="" alt="Pinterest"></a></li>
-					<li><a href=""><img src="" alt="Twitter"></a></li>
+					<li><a href=""><img src="img/icon-facebook.svg" alt="Facebook"></a></li>
+					<li><a href=""><img src="img/icon-instagram.svg" alt="Instagram"></a></li>
+					<li><a href=""><img src="img/icon-pinterest.svg" alt="Pinterest"></a></li>
+					<li><a href=""><img src="img/icon-twitter.svg" alt="Twitter"></a></li>
 				</ul>
 			</div>
 		</header>
 
+		<!-- Search Overlay -->
+		<div class="overlay overlay-content">
+
+			<!-- Close Window -->
+			<a href="#" class="overlay-close SearchButton"><span class="glyphicon glyphicon-remove"></span></a>
+
+			<!-- Content -->
+			<iframe src="search.html" class="overlay-iframe"></iframe>
+
+		</div>
+
 		<!-- Content -->
-		<div class="wrapper">
+		<div class="wrapper list-content">
 				
 			<!-- Top Bar -->
-			<div class="topbar">
-				<div class="topbar-search">
-					<span class="search-icon"></span>
+			<div class="topbar TopBar">
+				<a href="#" class="topbar-search SearchButton">
+					<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
 					<span>Buscar Discos o Eventos en Lima</span>
-				</div>
+				</a>
 				<div class="topbar-login">
 					<a href="#" class="login-user">Ingreso Usuarios</a>
 					<a href="#" class="login-admin">Ingreso Administradores</a>
@@ -67,74 +81,128 @@
 			</div>
 
 			<!-- Full List -->
-			<div class="full-list">
+			<section class="full-list">
 				<div class="container">
-					<h2>Discos en Lima</h2>
+					<div class="col-xs-12">
+						<h1>Discos en Lima</h1>
+					</div>
 					<div class="list-block">
-						<div class="block-label">
+						<div class="block-label col-sm-12">
 							<h2>Discos Destacadas</h2>
-							<span class="block-toggle"></span>
+							<span class="block-toggle">
+								<span class="glyphicon block-open glyphicon-triangle-bottom"></span><span class="glyphicon block-close glyphicon-triangle-top"></span>
+							</span>
 						</div>
-						<div class="col-md-3 col-sm-3">
-							<img src="" class="disco-thumb">
+						<div class="discos-thumb col-md-3 col-sm-3">
+							<div class="discos-logo">
+								<img src="" alt="">
+							</div>
 							<h3>Nombre de Disco</h3>
 							<span class="item-location">Distrito</span>
 						</div>
-						<div class="col-md-3 col-sm-3">
-							<img src="" class="disco-thumb">
+						<div class="discos-thumb col-md-3 col-sm-3">
+							<div class="discos-logo">
+								<img src="" alt="">
+							</div>
 							<h3>Nombre de Disco</h3>
 							<span class="item-location">Distrito</span>
 						</div>
-						<div class="col-md-3 col-sm-3">
-							<img src="" class="disco-thumb">
+						<div class="discos-thumb col-md-3 col-sm-3">
+							<div class="discos-logo">
+								<img src="" alt="">
+							</div>
+							<h3>Nombre de Disco</h3>
+							<span class="item-location">Distrito</span>
+						</div>
+						<div class="discos-thumb col-md-3 col-sm-3">
+							<div class="discos-logo">
+								<img src="" alt="">
+							</div>
+							<h3>Nombre de Disco</h3>
+							<span class="item-location">Distrito</span>
+						</div>
+						<div class="discos-thumb col-md-3 col-sm-3">
+							<div class="discos-logo">
+								<img src="" alt="">
+							</div>
+							<h3>Nombre de Disco</h3>
+							<span class="item-location">Distrito</span>
+						</div>
+						<div class="discos-thumb col-md-3 col-sm-3">
+							<div class="discos-logo">
+								<img src="" alt="">
+							</div>
 							<h3>Nombre de Disco</h3>
 							<span class="item-location">Distrito</span>
 						</div>
 					</div>
 					<div class="list-block">
-						<div class="block-label">
+						<div class="block-label col-sm-12">
 							<h2>Miraflores</h2>
-							<span class="block-toggle"></span>
+							<span class="block-toggle">
+								<span class="glyphicon block-open glyphicon-triangle-bottom"></span><span class="glyphicon block-close glyphicon-triangle-top"></span>
+							</span>
 						</div>
-						<div class="col-md-3 col-sm-3">
-							<img src="" class="disco-thumb">
+						<div class="discos-thumb col-md-3 col-sm-3">
+							<div class="discos-logo">
+								<img src="" alt="">
+							</div>
 							<h3>Nombre de Disco</h3>
 							<span class="item-location">Distrito</span>
 						</div>
-						<div class="col-md-3 col-sm-3">
-							<img src="" class="disco-thumb">
+						<div class="discos-thumb col-md-3 col-sm-3">
+							<div class="discos-logo">
+								<img src="" alt="">
+							</div>
 							<h3>Nombre de Disco</h3>
 							<span class="item-location">Distrito</span>
 						</div>
-						<div class="col-md-3 col-sm-3">
-							<img src="" class="disco-thumb">
+						<div class="discos-thumb col-md-3 col-sm-3">
+							<div class="discos-logo">
+								<img src="" alt="">
+							</div>
 							<h3>Nombre de Disco</h3>
 							<span class="item-location">Distrito</span>
 						</div>
 					</div>
 					<div class="list-block">
-						<div class="block-label">
+						<div class="block-label col-sm-12">
 							<h2>Barranco</h2>
-							<span class="block-toggle"></span>
+							<span class="block-toggle">
+								<span class="glyphicon block-open glyphicon-triangle-bottom"></span><span class="glyphicon block-close glyphicon-triangle-top"></span>
+							</span>
 						</div>
-						<div class="col-md-3 col-sm-3">
-							<img src="" class="disco-thumb">
+						<div class="discos-thumb col-md-3 col-sm-3">
+							<div class="discos-logo">
+								<img src="" alt="">
+							</div>
 							<h3>Nombre de Disco</h3>
 							<span class="item-location">Distrito</span>
 						</div>
-						<div class="col-md-3 col-sm-3">
-							<img src="" class="disco-thumb">
+						<div class="discos-thumb col-md-3 col-sm-3">
+							<div class="discos-logo">
+								<img src="" alt="">
+							</div>
 							<h3>Nombre de Disco</h3>
 							<span class="item-location">Distrito</span>
 						</div>
-						<div class="col-md-3 col-sm-3">
-							<img src="" class="disco-thumb">
+						<div class="discos-thumb col-md-3 col-sm-3">
+							<div class="discos-logo">
+								<img src="" alt="">
+							</div>
 							<h3>Nombre de Disco</h3>
 							<span class="item-location">Distrito</span>
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
+
+			<!-- Footer -->
+			<footer>
+				<h6>DisGo. 2016</h6>
+				<a href="">Preguntas Frecuentes</a>
+				<a href="">Términos y Condiciones</a>
+			</footer>
 
 		</div>
 		
@@ -143,7 +211,11 @@
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="js/ie10-viewport-bug-workaround.js"></script>
+	<script src="js/easing.min.js"></script>
+	<script src="js/scripts.js"></script>
 
 </body>
 </html>
