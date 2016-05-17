@@ -3,27 +3,61 @@
 * { padding: 0; margin: 0; border: none; }
 body { font-family: 'Open Sans', sans-serif; }
 h1, h2, h3 { margin: 0; text-align: center; color: #ffffff; }
-h2 { font-size: 3rem; font-weight: 700; }
-h3 { font-size: 1.8rem; font-weight: 400; }
+h2 { font-size: 4rem; font-weight: 700; }
+h3 { font-size: 3rem; font-weight: 100; }
+a { text-decoration: none; color: inherit; }
+a:hover { text-decoration: none; color: #ffffff; }
 section { padding: 80px 0; border-top: 4px solid #ffffff; }
 .page { width: 100%; max-width: 100%; max-height: 100%; }
-
+.button { background: #400263; display: inline-block; padding: 10px 20px; margin: 10px 0; border-radius: 8px; font-size: 1.6rem; font-weight: 100; line-height: 20px; color: #ffffff; }
 
 /* SIDEBAR HEADER STYLES
 -------------------------------------------------- */
-header { background: #000000; position: fixed; top: 0; left: 0; width: 100%; height: 60px; z-index: 15; }
-header h1 { position: absolute; top: 20px; left: 30px; width: 60px; height: 82px; }
+header { background: url("../img/bg-geo-gradient.jpg") center no-repeat; position: fixed; top: 0; left: 0; width: 100%; height: 60px; z-index: 15; }
+header h1 { float: left; height: 30px; margin: 15px 0; }
 header h1 a { display: block; text-indent: -9999px; }
-header h1 a > img { float: left; width: 60px; }
+header h1 a > img { float: left; height: 30px; }
+header .button { float: right; }
 
-.cover { background: #000000; width: 100%; height: 100%; }
 
-.feature-button { padding: 5px 10px; border-radius: 4px; text-align: center; color: #ffffff; }
+/* COVER STYLES
+-------------------------------------------------- */
+.cover { background: #000000; position: relative; width: 100%; }
+.cover .cover-scroll { position: absolute; width: 100%; left: 0; bottom: 40px; }
+.cover .cover-scroll span { display: block; font-size: 4.8rem; text-align: center; color: #ffffff; }
+.cover .cover-scroll:hover span { animation: bounce 0.3s ease-out infinite alternate; -webkit-animation: bounce 0.3s ease-out infinite alternate; }
+
+.app-link { background: url("../img/main-cover.jpg") center no-repeat; }
+
+.app-feature { background: #540381; text-align: center; }
+.app-feature h3 { margin-top: 10px; }
+.app-feature .app-infograph { display: block; }
+.app-feature .app-infograph > img {}
+.app-feature .app-infograph .app-animate { margin-top: 100%; -webkit-transform: rotateY(90deg); transform: rotateY(90deg); opacity: 0; }
+.app-feature .app-infograph .app-animate-on { animation: turn 3s 1; -webkit-animation: ease-out turn 3s 1; }
+
+.admin-link { background: url("../img/bg-events-list.jpg") center no-repeat; }
+
+.admin-feature { background: url("../img/main-cover.jpg") center no-repeat; text-align: center; }
+.admin-feature h3 { margin-top: 10px; }
 
 .discos { background: #000000; padding: 60px 0; }
 .discos .discos-thumb { margin: 20px 0; text-align: center; }
 .discos .discos-thumb .discos-logo { display: block; width: 140px; height: 140px; margin: 0 auto 10px; border: 2px solid #ff1fff; border-radius: 100%; }
 .discos .discos-thumb .discos-location { display: block; font-size: 1.4rem; font-weight: 400px; text-align: center; color: #ffffff; }
+
+.contacts { background: url("../img/bg-contacts.jpg") center no-repeat; }
+.contacts .contacts-form { text-align: center; }
+.contacts .contacts-form label { display: inline-block; width: 40%; margin: 10px 20px; text-align: left; font-size: 1.8rem; font-weight: 100; color: #ffffff; }
+@media screen and ( max-width: 360px ) {
+	.contacts .contacts-form label { width: 100%; margin: 10px 0; }
+}
+.contacts .contacts-form input { background: none; display: block; width: 100%; padding: 10px 0 5px; border-bottom: 1px solid #ffffff; font-size: 2.4rem; font-weight: 100; color: #ffffff; }
+.contacts .contacts-form .button { display: block; margin: 20px auto 80px; }
+.contacts .contacts-social { text-align: center; }
+.contacts .contacts-social a { display: inline-block; margin: 40px 15px 0; }
+.contacts .contacts-social a img { width: 40px; height: 40px; }
+
 
 /* FOOTER STYLES
 -------------------------------------------------- */
@@ -32,3 +66,22 @@ footer h6, footer a { display: inline-block; padding: 0 20px; font-size: 1.4rem;
 footer a:hover { color: #ffffff; }
 
 
+/* ANIMATIONS STYLES
+-------------------------------------------------- */
+@keyframes bounce {
+	from { margin-bottom: 0px; }
+	to { margin-bottom: 20px; }
+}
+@-webkit-keyframes bounce {
+	from { margin-bottom: 0px; }
+	to { margin-bottom: 20px; }
+}
+
+@keyframes turn {
+	from { margin-top: 100%; -webkit-transform: rotateY(90deg); transform: rotateY(90deg); opacity: 0; }
+	to { margin-top: 0; -webkit-transform: rotateY(0deg); transform: rotateY(0deg); opacity: 1; }
+}
+@-webkit-keyframes turn {
+	from { margin-top: 100%; -webkit-transform: rotateY(90deg); transform: rotateY(90deg); opacity: 0; }
+	to { margin-top: 0; -webkit-transform: rotateY(0deg); transform: rotateY(0deg); opacity: 1; }
+}
