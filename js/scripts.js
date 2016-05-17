@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+	var screenHeight = window.innerHeight;
+	var screenWidth = window.innerWidth;
+	$(".cover").css({"width": screenWidth, "height":screenHeight });
+
+
 	/* Open/Close Search window
 	-------------------------------------------------- */
 	$(".SearchButton").on("click", function(a){
