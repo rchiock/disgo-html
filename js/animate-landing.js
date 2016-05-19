@@ -7,18 +7,18 @@ $(document).ready(function(){
 		var appPosX = $(".app-feature").offset().top;
 		var adminPosX = $(".admin-feature").offset().top;
 		if (sectionUp>=(appPosX-300)) {
-			$(".app-feature .image-animate").animate({marginTop: '0', opacity: '1' },1000);
-			$(".app-feature .info-text-2").delay(500).animate({marginTop: '0', opacity: '1' },1000);
-			$(".app-feature .info-text-1").delay(1000).animate({marginTop: '0', opacity: '1' },1000);
-			$(".app-feature .info-text-4").delay(1500).animate({marginTop: '0', opacity: '1' },1000);
-			$(".app-feature .info-text-3").delay(2000).animate({marginTop: '0', opacity: '1' },1000);
+			$(".app-feature .image-animate").addClass("imageturn-animate-on");
+			$(".app-feature .info-text-2").addClass("slideup-animate-on");
+			$(".app-feature .info-text-1").addClass("slideup-animate-on");
+			$(".app-feature .info-text-4").addClass("slideup-animate-on");
+			$(".app-feature .info-text-3").addClass("slideup-animate-on");
 		}
 		if (sectionUp>=(adminPosX-300)) {
-			$(".admin-feature .image-animate").animate({marginTop: '0', opacity: '1' },1000);
-			$(".admin-feature .info-text-1").delay(500).animate({marginTop: '0', opacity: '1' },1000);
-			$(".admin-feature .info-text-2").delay(1000).animate({marginTop: '0', opacity: '1' },1000);
-			$(".admin-feature .info-text-3").delay(1500).animate({marginTop: '0', opacity: '1' },1000);
-			$(".admin-feature .info-text-4").delay(2000).animate({marginTop: '0', opacity: '1' },1000);
+			$(".admin-feature .image-animate").addClass("imagescale-animate-on");
+			$(".admin-feature .info-text-2").addClass("slideleft-animate-on");
+			$(".admin-feature .info-text-4").addClass("slideleft-animate-on");
+			$(".admin-feature .info-text-1").addClass("slideright-animate-on");
+			$(".admin-feature .info-text-3").addClass("slideright-animate-on");
 		}
 	})
 
